@@ -1,0 +1,4 @@
+<resources>
+    <string name="accessibility_description">允许远程协助时执行点击和滑动操作</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar" />
+</resources>
