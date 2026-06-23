@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Android Remote Control MVP</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="toolbar">
+        <div>
+          <h1>Android 远程控制</h1>
+          <p id="status">未连接</p>
+        </div>
+        <label>
+          房间号
+          <input id="room" value="123456" inputmode="numeric" />
+        </label>
+        <button id="connect">连接</button>
+      </section>
+
+      <section class="stage">
+        <div id="screen" class="screen" aria-label="远程屏幕触控区">
+          <div class="screenHint">连接 Android 后，这里显示远程画面；当前可用作触控测试区</div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button data-command="back">返回</button>
+        <button data-command="home">Home</button>
+        <button data-command="recents">最近任务</button>
+        <input id="textInput" placeholder="发送文字到 Android" />
+        <button id="sendText">发送文字</button>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
